@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/red"
+        android:title="Red"
+        android:icon="@drawable/red_circle"
+
+        />
+    <item
+        android:id="@+id/green"
+        android:icon="@drawable/green_circle"
+        android:title="Green"/>
+    <item
+        android:id="@+id/blue"
+        android:icon="@drawable/blue_circle"
+        android:title="Blue"/>
+    <item
+        android:id="@+id/skin"
+        android:icon="@drawable/skin_circle"
+        android:title="Sand"/>
+    <item
+        android:id="@+id/teal"
+        android:icon="@drawable/teal_circle"
+        android:title="Teal"/>
+    <item
+        android:id="@+id/yellow"
+        android:icon="@drawable/yellow_circle"
+        android:title="Yellow"/>
+    <item
+        android:id="@+id/purple"
+        android:icon="@drawable/purple_circle"
+        android:title="Purple"/>
+    <item
+        android:id="@+id/grey"
+        android:icon="@drawable/grey_circle"
+        android:title="Grey"/>
+</menu>

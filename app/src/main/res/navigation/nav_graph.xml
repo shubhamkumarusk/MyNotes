@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/notesFront">
+
+    <fragment
+        android:id="@+id/notesFront"
+        android:name="com.example.mynotes.Fragment.NotesFront"
+        android:label="Notes"
+        tools:layout="@layout/fragment_notes_front">
+        <argument
+            android:name="notes"
+            app:argType="com.example.mynotes.database.Notes"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_notesFront_to_notesEdit"
+            app:destination="@id/notesEdit" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/notesEdit"
+        android:name="com.example.mynotes.Fragment.NotesEdit"
+        android:label="Notes"
+        tools:layout="@layout/fragment_notes_edit">
+        <argument
+            android:name="notes"
+            app:argType="com.example.mynotes.database.Notes"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_notesEdit_to_notesFront"
+            app:destination="@id/notesFront"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/notesEdit"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+</navigation>
