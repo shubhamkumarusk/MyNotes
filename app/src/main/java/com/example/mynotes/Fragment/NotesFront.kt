@@ -176,10 +176,7 @@ class NotesFront : Fragment() {
         binding.yellowBtn.setOnClickListener(colorButtonCLicker)
         binding.purpleBtn.setOnClickListener(colorButtonCLicker)
         binding.greyBtn.setOnClickListener(colorButtonCLicker)
-
-        binding.frontLayout.setOnClickListener{
-            adapter.clearFilter()
-        }
+        
 
 
     }
